@@ -1,0 +1,25 @@
+name:                 Mandel
+version:              0.1.0.0
+synopsis:             
+-- description:
+-- license:
+-- license-file:
+homepage:             
+author:               pothocket
+maintainer:           
+category:             
+-- copyright:
+build-type:           Simple
+-- extra-source-files:
+cabal-version:        >=1.10
+
+executable Mandel
+  ghc-options:
+    -threaded
+  main-is:              Main.hs
+  -- other-modules:
+  -- other-extensions:
+  build-depends:        linear, GPipe, GPipe-GLFW, base == 4.9.*, transformers, Boolean
+  hs-source-dirs:       src
+  default-language:     Haskell2010
+  other-modules: Shader, Util, Constants, Complex, Lists
